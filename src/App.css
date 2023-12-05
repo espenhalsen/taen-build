@@ -1,0 +1,161 @@
+.app-container {
+  font-family: 'Arial', sans-serif;
+  background: #f7f7f7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.main-content {
+  margin-top: 10vh;
+  padding: 0 10px;
+}
+
+.sunbathing-advice {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #FFF3CD;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #856404;
+}
+
+.uv-index {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.uv-icon, .temp-icon {
+  width: 60px;
+  height: 60px;
+  color: #007AFF;
+}
+
+.uv-text .label, .uv-text .value {
+  display: block;
+  font-size: 50px;
+}
+
+.label {
+  font-size: 20px;
+  color: #666;
+}
+
+.value, .temp-value {
+  font-size: 35px;
+  font-weight: bold;
+  color: #333;
+}
+
+.temperature {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.temp-value {
+  display: block;
+}
+
+.divider {
+  width: 80%;
+  border-top: 1px solid #ddd;
+  margin: 20px auto;
+}
+
+.sub-info {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.sub-item {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.sub-icon {
+  width: 25px;
+  height: 25px;
+  color: #007AFF;
+}
+
+.sub-value {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.navigation-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #FFF;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav-button svg {
+  fill: #007AFF;
+  width: 30px;
+  height: 30px;
+}
+
+.nav-button:focus {
+  outline: none;
+}
+
+.disclaimer {
+  text-align: center;
+  font-size: 12px;
+  padding: 5px;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 5px auto;
+}
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #666;
+}
